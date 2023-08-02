@@ -222,11 +222,7 @@ body{
     left: -3%;
 
    }
-   .footer{
-    width: 100%;
-    height: 20vh;
-    
-   }
+   
    .footer>.join{
     display: flex;
     flex-direction: column;
@@ -272,8 +268,5 @@ body{
    }
    .right{
     visibility: hidden;
-   }
-   .main{
-    overflow-x: hidden;
    }
 }
