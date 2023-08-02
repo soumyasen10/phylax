@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 280px;
+    border-bottom: 2px solid #6a666679;
+}
+.nav>img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.nav>.solid>.part1>img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+    left: 85px;
+    border: 2px solid #fff;
+}
+.part1{
+    display: flex;
+    gap: 120px;
+}
+.part1>h1{
+    margin-top: 30px;
+}
+.solid{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
+}
+.part2 h2{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part2>i{
+    display: flex;
+    gap: 5px;
+    color: rgb(29, 29, 252);
+}
+.page{
+    position: relative;
+    /* display: flex; */
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+}
+.page>.left{
+    border-radius: 5px;
+    height: 400px;
+    width: 350px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 50px;
+    left: 110px;
+}
+.page>.left>h3{
+    padding: 20px 20px;
+}
+.page>.left>p{
+    font-size: 16px;
+    padding: 0px 20px;
+}
+.right{
+    position: absolute;
+    top: 50px;
+    left: 510px;
+}
+.hot{
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 10px;
+    background-color: #36D672;
+    border: 0px;
+    color: #fff;
+}
+.hot a{
+    text-decoration: none;
+    color: #fff;
+}
+.hot i{
+    background-color: #36D672;
+    font-size: 20px;
+}
+.footer{
+    height: 350px;
+    background-color: #1F2532;
+    width: 100%;
+}
+.footer>.join{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    border-bottom: 1px solid #fff;
+}
+.left1{
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+.left1>h3{
+    color: #01CB63;
+}
+.right1{
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ font-size: 40px;
+ font-weight: 500;
+ justify-content: center;
+ align-items: center;
+}
+.right1>button{
+    height: 40px;
+    width: 15vw;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #01CB63;
+    color: #fff;
+}
+.right1>button>a{
+    text-decoration: none;
+    color: #fff;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding:0px 180px ;
+
+}
+.last>p{
+    color: #fff;
+}
+.last>p>span{
+    color: #105BDE;
+}
+.last>.icon>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+    
+
+}
+.nav>.solid>.part1>h1>span{
+    font-size: 16px;
+}
+@media(max-width: 350px){
+   .nav>.solid>.part1>img{
+    position: relative;
+    left: 5%;
+   }
+   .nav>.solid>.part1>h1{
+    position: relative;
+    top:-15%;
+    font-size: 5vw;
+    left: -3%;
+   }
+   .nav>.solid>.part1>h1>span{
+    white-space: nowrap;
+    font-size: 2vw;
+   }
+   .nav>.solid>.part1{
+    display: flex;
+    gap: 12%;
+   }
+   .nav>.solid{
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+   }
+   .nav>.solid>.part2{
+    position: relative;
+    right: 10px;
+   
+   }
+   .nav>.solid>.part2>h2{
+    font-size: 66%;
+   }
+
+   .page{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .page>.left{
+    padding: 2% 2%;
+    width: 100%;
+    position: relative;
+    top: -20%;
+    left: -3%;
+
+   }
+   .footer>.join{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer>.join>.left{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   .footer>.join>.right1>h4{
+    font-size: 30px;
+    position: relative;
+    top: -20%;
+   }
+   .footer>.join>.right1>button{
+    width: 80%;
+    position: relative;
+    top: -30%;
+   }
+   .footer>.last{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer>.last>p{
+    width: 80%;
+    white-space: nowrap;
+    position: absolute;
+    left: 3%;
+    font-size: 85%;
+   }
+   .footer>.last>.icon{
+    display: flex;
+    position: relative;
+    top: 40%;
+   }
+}
