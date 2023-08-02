@@ -6,7 +6,7 @@
 body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+
 }
 .nav{
     height: 280px;
@@ -175,6 +175,9 @@ body{
     font-size: 16px;
 }
 @media(max-width: 600px){
+    .body{
+        overflow-x: hidden;
+    }
    
    .nav>.solid>.part1>img{
     position: relative;
