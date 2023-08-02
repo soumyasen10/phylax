@@ -173,7 +173,7 @@ body{
 .nav>.solid>.part1>h1>span{
     font-size: 16px;
 }
-@media(max-width: 350px){
+@media(max-width: 600px){
    .nav>.solid>.part1>img{
     position: relative;
     left: 5%;
@@ -246,17 +246,24 @@ body{
    .footer>.last{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%,0);
    }
    .footer>.last>p{
     width: 80%;
     white-space: nowrap;
-    position: absolute;
-    left: 3%;
+
     font-size: 85%;
    }
    .footer>.last>.icon{
     display: flex;
     position: relative;
     top: 40%;
+   }
+   .right{
+    visibility: hidden;
    }
 }
